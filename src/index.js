@@ -1,16 +1,7 @@
-const BankAccount = require('./abstraction_pillar');
+const TV = require('./encapsulation_pillar');
 
-const firstUserBankAccount = new BankAccount();
-const secondUserBankAccount = new BankAccount();
+const tv = new TV([2, 5, 7, 10], 5, 80);
 
-firstUserBankAccount.checkBalance();
-firstUserBankAccount.deposit(200);
-firstUserBankAccount.draw(300);
-firstUserBankAccount.draw(50);
-firstUserBankAccount.checkBalance();
+tv.active_channel = 7;
 
-secondUserBankAccount.checkBalance();
-secondUserBankAccount.deposit(300);
-secondUserBankAccount.draw(400);
-secondUserBankAccount.draw(50);
-secondUserBankAccount.checkBalance();
+console.log(tv.active_channel);

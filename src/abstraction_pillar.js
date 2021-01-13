@@ -1,26 +1,17 @@
-class BankAccount{
-    constructor(){
-        this.agency = 1075;
-        this.accountNumber = 8351125;
-        this.balance = 50;
-        this.limit = 4000;
+class Sofa{
+    constructor(number_space, reclining, color){
+        this.number_space = number_space,
+        this.reclining = reclining,
+        this.color = color
     }
 
-    deposit(value){
-        this.balance += value;
-    }
-
-    draw(value){
-        if(value > this.balance){
-            return console.log("You don't have this money:)")
+    recline(){
+        if(!!this.reclining){
+            console.log('reclined');
+        }else{
+            console.log('sofa is not reclining')
         }
-
-        this.balance -= value;
-    }
-
-    checkBalance(){
-        console.log(this.balance);
     }
 }
 
-module.exports = BankAccount;
+module.exports = Sofa;
