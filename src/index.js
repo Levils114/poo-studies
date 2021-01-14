@@ -1,7 +1,9 @@
-const TV = require('./encapsulation_pillar');
+const { Dog, Bird, Parrot } = require('./inheritance_pillar');
 
-const tv = new TV([2, 5, 7, 10], 5, 80);
+const dog = new Dog('Branco', 30, 'Grandes e caídas');
+const bird = new Bird('Amarelo', 10, 'Rachado');
+const parrot = new Parrot('Azul', 12, 'Pontudo', true);
 
-tv.active_channel = 7;
+parrot.fly();
 
-console.log(tv.active_channel);
+console.log(dog, bird);
