@@ -1,9 +1,9 @@
-const { Dog, Bird, Parrot } = require('./inheritance_pillar');
+const { Ostrich, Parrot } = require('./polymorphism_pillar');
 
-const dog = new Dog('Branco', 30, 'Grandes e caídas');
-const bird = new Bird('Amarelo', 10, 'Rachado');
 const parrot = new Parrot('Azul', 12, 'Pontudo', true);
+const ostrich = new Ostrich('Branco', 2, 'Grande');
 
 parrot.fly();
 
-console.log(dog, bird);
+ostrich.buryHead();
+ostrich.fly();
