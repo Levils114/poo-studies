@@ -1,9 +1,14 @@
-const { Ostrich, Parrot } = require('./polymorphism_pillar');
+const Product = require('./object_literal');
 
-const parrot = new Parrot('Azul', 12, 'Pontudo', true);
-const ostrich = new Ostrich('Branco', 2, 'Grande');
+const product = new Product('Santos 20/21 T-Shirt', 200);
 
-parrot.fly();
+const productLiteral = {
+    description: 'Santos 19/20 T-Shirt',
+    price: 180,
+    seeDescription: function() {
+        console.log(`${this.description} - R$ ${parseFloat(this.price).toFixed(2)}`);
+    }
+}
 
-ostrich.buryHead();
-ostrich.fly();
+product.seeDescription();
+productLiteral.seeDescription();
