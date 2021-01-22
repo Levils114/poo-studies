@@ -1,14 +1,12 @@
-const Product = require('./object_literal');
+const {userES5, userES6} = require('./object_literal');
 
-const product = new Product('Santos 20/21 T-Shirt', 200);
+console.log(userES5);
+userES5.showUser();
 
-const productLiteral = {
-    description: 'Santos 19/20 T-Shirt',
-    price: 180,
-    seeDescription: function() {
-        console.log(`${this.description} - R$ ${parseFloat(this.price).toFixed(2)}`);
-    }
-}
+userES6.username = 'José';
+userES6.height = 1.79;
+userES6.sayHi = () => console.log('Hi!');
 
-product.seeDescription();
-productLiteral.seeDescription();
+console.log(userES6);
+userES6.showUser();
+userES6.sayHi();
