@@ -1,10 +1,3 @@
-const Car = require('./construtor_function');
+const { parrot } = require('./prototype');
 
-const car = new Car();
-
-car.accelerate();
-car.accelerate();
-car.accelerate();
-car.accelerate();
-car.accelerate();
-console.log(car.speed);
+console.log(parrot.atribbute4);
