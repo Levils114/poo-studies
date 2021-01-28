@@ -1,3 +1,5 @@
-const { parrot } = require('./prototype');
+const {Sum, Mult} = require('./rest_operator');
 
-console.log(parrot.atribbute4);
+Sum(1,2,3,4,5,10);
+
+Mult(5, 10, 10, 10);
